@@ -1,5 +1,5 @@
 let timer;
-let timeRemaining = 10;
+let timeRemaining = 1500;
 let running = false;
 
 const timerElement = document.getElementById("timer");
@@ -47,7 +47,7 @@ resetButton.addEventListener("click", function() {
 
     clearInterval(timer);
     running = false;
-    timeRemaining = 10; 
+    timeRemaining = 1500; 
     updateTimer();
 });
 
