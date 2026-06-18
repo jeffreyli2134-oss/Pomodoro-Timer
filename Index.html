@@ -8,26 +8,54 @@
 
 <body>
 
-    <div class="container">
 
-        <h1>Nebula Timer</h1>
 
-        <div id="timer">25:00</div>
+    <div id="homeScreen">
 
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
+        <h1>What would you like to study today?</h1>
 
-        <div class="buttons">
-            <button id="start">Start</button>
-            <button id="pause">Pause</button>
-            <button id="reset">Reset</button>
-        </div>
-
-<p id = "quote">press start to begin</p>
+        <button class="activityBtn" data-activity="Study">Study</button>
+        <button class="activityBtn" data-activity="Coding">Coding</button>
+        <button class="activityBtn" data-activity="Writing">Writing</button>
+        <button class="activityBtn" data-activity="Brainstorming">Design</button>
 
     </div>
 
+ <div id="setupScreen" style="display: none;">
+    <h1 id="setupTitle">Setup</h1>
+    <button id="beginSession">Begin Focus Session</button>
+</div>
+
+    <div id="timerScreen" style="display: none;">
+
+        <div class="container">
+
+            <h2 id="activityName"></h2>
+
+            <h1>Nebula Timer</h1>
+
+            <div id="timer">25:00</div>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <p id="quote">press start to begin</p>
+
+        </div>
+
+    </div>
+
+  <div id="resultsScreen" style="display: none;">
+    <h1>Session Complete</h1>
+    <button id="returnHome">Return Home</button>
+</div>
 
     <script src="function.js"></script>
 
