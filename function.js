@@ -1,5 +1,5 @@
 let timer;
-let totalSeconds = 10;
+let totalSeconds = 1500;
 let timeRemaining = totalSeconds;
 let running = false;
 
@@ -43,7 +43,10 @@ startButton.addEventListener("click", function() {
 
         updateTimer();
     }, 1000);
+
+    showRandomQuote();
 });
+
 
 resetButton.addEventListener("click", function() {
     clearInterval(timer);
@@ -56,3 +59,21 @@ pauseButton.addEventListener("click", function() {
     clearInterval(timer);
     running = false;
 });
+
+const quotes = [
+
+    "Small progress is still progress.",
+    "One session is better than none.",
+    "Focus on the next step.",
+    "Future you will thank present you.",
+    "Done is better than perfect."
+];
+
+const quoteElement = document.getElementByID("quote")
+
+function getRandomQuote() {
+
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteElement.textContent = quotes[randomIndex];
+
+}
