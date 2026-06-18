@@ -1,3 +1,3 @@
-A simple pomodoro that helps students stay consistent and productive
+A productivity hub that takes the form of a roguelite, providing a way for students to: Set goals, log sessions, and be productive
 
- * Note: This is still a work in proggress
+ * Note: This is still a work in progress
